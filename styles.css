@@ -1,45 +1,78 @@
-.container {
-  width: 70%;
-  margin: auto;
-  text-align: center;
-}
-
-.dice {
-  text-align: center;
-  display: inline-block;
-
-}
-
-.dice:hover{
-  transform: translateY(-10px);
-}
-
+/* CSS FOR Body */
 body {
-  background-color: #393E46;
+  background-color: #212223;
 }
 
+/* CSS FOR Heading */
+#heading {
+  text-align: center;
+}
 h1 {
   margin: 30px;
-  font-family: 'Lobster', cursive;
-  text-shadow: 5px 0 #232931;
-  font-size: 8rem;
-  color: #4ECCA3;
+  font-family: "Lobster", cursive;
+  text-shadow: 6px 0 black;
+  font-size: 5rem;
+  color: rgb(3, 239, 239);
 }
 
+/* CSS FOR Container */
+.container {
+  width: 70%;
+  margin: 100px auto 0; /* <-- yahan auto added */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem; /* dice ke beech space */
+  text-align: center;
+}
+.dice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 p {
   font-size: 2rem;
-  color: green;
-  font-family: 'Indie Flower', cursive;
+  color: blanchedalmond;
+  font-family: "Times New Roman", Times, serif;
 }
-
+img:hover {
+  transform: scale(1.1);
+}
 img {
-  width: 80%;
+  width: 180px; /* px use karo for stable layout */
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  transition: transform 150ms ease;
 }
 
-footer {
-  margin-top: 5%;
-  color: red;
+/* CSS FOR buttons */
+#button {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button:hover {
+  background-color: rgb(131, 9, 9);
+  color: blanchedalmond;
+}
+button {
+  border-radius: 10px;
+  font-size: large;
+  font-weight: bold;
+  background-color: blanchedalmond;
+  color: black;
   text-align: center;
-  font-family: 'Indie Flower', cursive;
+  display: flex;
+  margin: 20px auto;
+  padding: 10px 20px;
+}
 
+/* CSS FOR Footers */
+footer {
+  font-size: 20px;
+  margin-top: 180px;
+  color: blanchedalmond;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
 }
